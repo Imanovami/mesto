@@ -1,0 +1,15 @@
+.profile__info {
+  grid-column: 2/3;
+  align-self: center;
+  display: grid;
+  margin-left: 30px;
+}
+
+@media (max-width: 700px) {
+  .profile__info{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin-top: 15px;
+    grid-row-gap: 0;
+    margin-left: 0;
+}

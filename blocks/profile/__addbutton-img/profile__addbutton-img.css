@@ -1,0 +1,12 @@
+.profile__addbutton-img {
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+}
+
+@media (max-width: 700px) {
+  .profile__addbutton-img {
+    width: 16px;
+    height: 16px;
+  }
+}

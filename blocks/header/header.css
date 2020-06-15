@@ -1,0 +1,14 @@
+@import url(../header/__logo/header__logo.css);
+@import url(../header/__border/header__border.css);
+
+.header {
+
+}
+
+@media (max-width: 700px) {
+  .header {
+    padding-left: 27px;
+    padding-top: 28px;
+    box-sizing: border-box;
+ }
+}

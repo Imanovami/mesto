@@ -1,0 +1,15 @@
+.popup__name-input {
+  border: none;
+  width: 358px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@media (max-width: 700px) {
+  .popup__name-input {
+    width: 200px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

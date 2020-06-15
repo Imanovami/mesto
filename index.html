@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesto</title>
+  <link rel="stylesheet" href="./page/index.css">
+</head>
+
+<body class="container">
+  <div class="root">
+    <header class="header">
+      <img class="header__logo" src="images/header-logo.svg" alt="логотип сайта Место.">
+      <div class="header__border"></div>
+    </header>
+
+    <main class="content">
+      <section class="profile">
+        <img class="profile__avatar" src="images/profile-jack.jpg" alt="аватар.">
+        <div class="profile__info">
+          <h1 class="profile__title">Жак-Ив Кусто</h1>
+          <p class="profile__text">Исследователь океана</p>
+          <button class="profile__editbutton popup__open" type="button"><img class="profile__editbutton-img" src="images/profile-Edit _Button.svg" alt="кнопка редактирования профиля."></button>
+        </div>
+        <button class="profile__addbutton"><img class="profile__addbutton-img" type="button" src="images/profile-Add_Button.svg" alt="кнопка добавления профиля."></button>
+      </section>
+
+      <section class="elements">
+        <div class="element">
+          <img class="element__photo" src="images/element-karachaevsk.jpg" alt="Сентинский храм в Карачаево-Черкесии.">
+          <p class="element__title">Карачаевск</p>
+          <img class="element__button" src="images/elements-heart.svg" alt="кнопка Лайк.">
+        </div>
+        <div class="element">
+          <img class="element__photo" src="images/element-elbrus.jpg" alt="Гора Эльбрус.">
+          <p class="element__title">Гора Эльбрус</p>
+          <img class="element__button" src="images/elements-heart.svg" alt="кнопка Лайк.">
+        </div>
+        <div class="element">
+          <img class="element__photo" src="images/element-dombai.jpg" alt="Домбай.">
+          <p class="element__title">Домбай</p>
+          <img class="element__button" src="images/elements-heart.svg" alt="кнопка Лайк.">
+        </div>
+        <div class="element">
+          <img class="element__photo" src="images/element-elbrus.jpg" alt="Гора Эльбрус.">
+          <p class="element__title">Гора Эльбрус</p>
+          <img class="element__button" src="images/elements-heart.svg" alt="кнопка Лайк.">
+        </div>
+        <div class="element">
+          <img class="element__photo" src="images/element-dombai.jpg" alt="Домбай.">
+          <p class="element__title">Домбай</p>
+          <img class="element__button" src="images/elements-heart.svg" alt="кнопка Лайк.">
+        </div>
+        <div class="element">
+          <img class="element__photo" src="images/element-karachaevsk.jpg" alt="Сентинский храм в Карачаево-Черкесии.">
+          <p class="element__title">Карачаево-Черкесская Республика</p>
+          <img class="element__button" src="images/elements-heart.svg" alt="кнопка Лайк.">
+        </div>
+     
+      </section>
+    </main>
+     
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
+    </footer>
+    <div class="popup">
+      <div class="popup__container">
+        <button class="popup__close" type="button"><img class="popup__close-icon" src="images/popup-close.svg" alt="кнопка закрытия окна"></img></button>
+        <form class="popup__form">
+          <p class="popup__title">Редактировать профиль</p>
+          <input class="popup__name-input" type=text>
+          <div class=" popup__border"></div>
+          <input class="popup__job-input" type=text>
+          <div class="popup__border"></div>
+          <button class="popup__save">Сохранить</button>
+        </form>
+      </div>
+    </div>
+
+
+
+
+  </div>
+</body>
+<script type="text/javascript" src='./scripts/index.js'></script>
+
+</html>

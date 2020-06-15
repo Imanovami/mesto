@@ -1,0 +1,10 @@
+.header__border {
+  padding-top: 40.6px;
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+}
+
+@media (max-width: 690px) {
+  .header__border {
+    padding-top: 31.6px;
+  } 
+}

@@ -1,0 +1,14 @@
+@import url(../element/__photo/element__photo.css);
+@import url(../element/__title/element__titile.css);
+@import url(../element/__button/element__button.css);
+
+
+.element {
+  min-width: 282px;
+  max-height: 361px;
+  background-color: #FFF;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 239px 1fr;
+  grid-template-rows: repeat(2,min-content);
+}
