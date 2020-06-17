@@ -1,18 +1,11 @@
+@import url(../elements/__container/elements__container.css);
+
 .elements {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 281px);
-  grid-gap: 18px;
+ 
 }
 
-@media (max-width: 1279px) {
-  .elements {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 690px) {
+@media (max-width: 780px) {
   .elements {
     padding-bottom: 48px;
-    grid-gap: 20px;
   }
 }
