@@ -1,12 +1,4 @@
 .popup__container {
   display: grid;
-  grid-template-columns: 430px 40.7px;
-  grid-template-rows: 40.7px 330px;
 }
 
-@media (max-width: 700px) {
-  .popup__container {
-    grid-template-columns: 250px 20px;
-    grid-template-rows: 20px 330px;
-  }
-}

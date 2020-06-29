@@ -1,7 +1,8 @@
 @import url(../element/__photo/element__photo.css);
 @import url(../element/__title/element__titile.css);
-@import url(../element/__buttons/element__buttons.css);
-@import url(../element/__button/element__button.css);
+@import url(../element/__like/element__like.css);
+@import url(../element/__like_active/element__like_active.css);
+@import url(../element/__trash/element__trash.css);
 
 
 .element {

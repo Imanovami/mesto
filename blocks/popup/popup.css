@@ -7,6 +7,13 @@
 @import url(../popup/__name-input/popup__name-input.css);
 @import url(../popup/__job-input/popup__job-input.css);
 @import url(../popup/__save/popup__save.css);
+@import url(../popup/_type_edit/popup_type_edit.css);
+@import url(../popup/_type_add/popup_type_add.css);
+@import url(../popup/__open_add/popup__open_add.css);
+@import url(../popup/_type_photo/popup_type_photo.css);
+@import url(../popup/__container-photo/popup__container-photo.css);
+@import url(../popup/__image-big/popup__image-big.css);
+@import url(../popup/__description/popup__description.css);
 
 .popup {
   background-color: rgba(0, 0, 0, .5);
@@ -17,6 +24,9 @@
   top: 0;
   align-items: center;
   justify-content: center;
-  display: none;
+  display: grid;
   margin-left: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s linear;
 }

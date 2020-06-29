@@ -1,0 +1,7 @@
+.popup__description {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  color: #FFF;
+  font-size: 12px;
+  line-height: 15px;
+}
