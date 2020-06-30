@@ -3,4 +3,5 @@
   grid-column: 1/2;
   max-height: 75vh;
   max-width: 75vw;
+  object-fit: cover;
 }
