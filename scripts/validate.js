@@ -67,7 +67,7 @@ const setEventListeners = (formElement) => {
 
 
 //НАХОДИМ И ПЕРЕБИРАЕМ ВСЕ ФОРМЫ НА СТРАНИЦЕ
-const enableValidation = () => {
+const enableValidation = (config) => {
   const {
   formSelector, inputSelector, submitButtonSelector, inactiveButtonClass, inputErrorClass, errorClass
 } = config;
