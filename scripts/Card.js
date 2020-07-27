@@ -1,4 +1,4 @@
-import {popupOpen,popupPhotoTitle, popupBigPhoto, popupPhoto} from "./utils.js";
+import {popupOpen,popupPhotoTitle, popupBigPhoto} from "./utils.js";
 export class Card {
     constructor(data, cardSelector) {
         this._link = data.link;
@@ -18,15 +18,17 @@ export class Card {
     generateCard() {
         this._element = this._getTemplate();
         this._setEventListeners();
-        this._element.querySelector('.element__photo').src = this._link;
+        const elementPhoto = this._element.querySelector('.element__photo')
+        elementPhoto.src = this._link;
         this._element.querySelector('.element__title').textContent = this._name;
-        this._element.querySelector('.element__photo').alt = this._name
+        elementPhoto.alt = this._name
         return this._element;
     }
 
     _setEventListeners() {
-        this._element.querySelector('.element__like').addEventListener('click', () =>  {
-            this._handleLikeIcon();
+        const elementLike = this._element.querySelector('.element__like')
+        elementLike.addEventListener('click', () =>  {
+            this._handleLikeIcon(elementLike);
         });
         this._element.querySelector('.element__trash').addEventListener('click', () =>  {
             this._handleTrashIcon();
@@ -37,8 +39,8 @@ export class Card {
         });
     }
 
-    _handleLikeIcon() {
-        this._element.querySelector('.element__like').classList.toggle('element__like_active')
+    _handleLikeIcon(elm) {
+        elm.classList.toggle('element__like_active')
     };
 
     _handleTrashIcon () {

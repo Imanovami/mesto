@@ -1,4 +1,3 @@
-import {FormValidator} from "./FormValidator.js";
 const config = {
     formSelector: '.popup__form',
     inputSelector: '.popup__input',
@@ -7,20 +6,10 @@ const config = {
     inputErrorClass: 'popup__input_type_error',
     errorClass: 'popup__error_visible'
 };
+
 const popupPhoto = document.querySelector('.popup_type_photo');
 const popupPhotoTitle = popupPhoto.querySelector('.popup__description');
 const popupBigPhoto = popupPhoto.querySelector('.popup__image-big');
-const popupEdit = document.querySelector('.popup_type_edit');
-const popupAdd = document.querySelector('.popup_type_add');
-const nameInput = popupEdit.querySelector('.popup__input_type_name');
-const nameInputValue = document.querySelector('.profile__title');
-const jobInput = popupEdit.querySelector('.popup__input_type_job');
-const formEditElement = popupEdit.querySelector('.popup__form');
-const formAddElement = popupAdd.querySelector('.popup__form');
-const jobInputValue = document.querySelector('.profile__text');
-const formEditValidator = new FormValidator(config, formEditElement);
-const formAddValidator = new FormValidator(config, formAddElement);
-
 
 
 const initialCards = [
@@ -62,39 +51,9 @@ const popupClose = (popup) => {
     window.removeEventListener('keydown', closeClick);
 };
 
-//ОТКРЫВАЕТ РЕДАКТИРОВАНИЕ ИМЕНИ
-
-const openEditPopup = () => {
-    popupOpen(popupEdit);
-    nameInput.value = nameInputValue.textContent;
-    jobInput.value = jobInputValue.textContent;
-    formEditValidator.enableValidation();
-};
-
-//ЗАКРЫВАЕТ РЕДАКТИРОВАНИЕ ИМЕНИ
-const closeEditPopup = () => {
-    popupClose(popupEdit);
-    formEditValidator.hideInputError(popupEdit,nameInput);
-    formEditValidator.hideInputError(popupEdit,jobInput);
-};
-
-
-//ОТКРЫТИЕ ДОБАВЛЕНИЯ КАРТОЧКИ
-const openAddPopup = () => {
-    popupOpen(popupAdd);
-    formAddElement.reset();
-    formAddValidator.enableValidation();
-};
-
-//ЗАКРТЫИЕ ДОБАВЛЕНИЯ КАРТОЧКИ
-const closeAddPopup = () => {
-    popupClose(popupAdd)
-    formAddValidator.hideInputError(popupAdd,nameAddInput);
-    formAddValidator.hideInputError(popupAdd,photoAddInput);
-};
 
 //ЗАКРЫТИЕ КЛИКОМ ПО ОВЕРЛЭЙ
-const overlayClose = (evt) => {
+const overlayClose = (event) => {
     const popup = document.querySelector('.popup_opened')
     if (event.target !== event.currentTarget) {return}
     popupClose(popup);
@@ -111,5 +70,5 @@ function closePhotoPopup() {
     popupClose(popupPhoto);
 }
 
-export {popupOpen,popupPhotoTitle, popupBigPhoto, popupPhoto, initialCards, popupClose, openEditPopup, closeEditPopup, openAddPopup, closeAddPopup, overlayClose,
-    closeClick, popupEdit,popupAdd, nameInput,nameInputValue, jobInput, jobInputValue, config, formEditElement, formAddElement, closePhotoPopup}
+export {popupOpen,popupPhotoTitle, popupBigPhoto, popupPhoto, initialCards, popupClose, overlayClose,
+    closeClick, config, closePhotoPopup}
