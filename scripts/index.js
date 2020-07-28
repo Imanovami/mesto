@@ -49,7 +49,7 @@ function formSubmitAdd (evt) {
   };
   const card = new Card(addCardNew, '#element-template');
   const cardElement = card.generateCard();
-  document.querySelector('.elements__container').append(cardElement);
+  document.querySelector('.elements__container').prepend(cardElement);
   popupClose(popupAdd);
 }
 
