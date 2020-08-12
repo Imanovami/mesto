@@ -1,0 +1,11 @@
+@import url(__container/elements__container.css);
+
+.elements {
+ 
+}
+
+@media (max-width: 780px) {
+  .elements {
+    padding-bottom: 48px;
+  }
+}
