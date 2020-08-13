@@ -1,13 +1,13 @@
 import Card from "../components/Card.js";
 import FormValidator from "../components/FormValidator.js";
-import {initialCards} from "../components/utils.js";
-import {config, containerListSelector} from "../components/utils.js";
+import {initialCards} from "../utils/utils.js";
+import {config, containerListSelector} from "../utils/utils.js";
 import Section from "../components/Section.js"
 import Popup from "../components/Popup.js";
 import PopupWithImage from "../components/PopupWithImage.js";
 import PopupWithForm from "../components/PopupWithForm.js";
 import UserInfo from "../components/UserInfo.js";
-import "../page/index.css";
+import "../pages/index.css";
 
 
 const popupEditSelector = '.popup_type_edit';
@@ -32,13 +32,16 @@ const formAddValidator = new FormValidator(config, formAddElement);
 const edit = new Popup(popupEditSelector);
 const add = new Popup(popupAddSelector);
 const editUser = new UserInfo(nameInputValue, jobInputValue);
+const nameInput = document.querySelector(nameInputSelector);
+const jobInput =  document.querySelector(jobInputSelector);
+const photo = new PopupWithImage('.popup_type_photo')
 
-
-const openBigPhoto = (evt) => {
-  const photo = new PopupWithImage(evt.target.src, evt.target.alt , '.popup_type_photo')
-  photo.open();
-  photo.setEventListeners()
+const openBigPhoto = (elm) => {
+  photo.open(elm);
 }
+
+photo.setEventListeners()
+
 const section = new Section ({
   item: initialCards,
   renderer: (item) => {
@@ -49,7 +52,6 @@ const section = new Section ({
 }, containerListSelector);
 
 section.renderItems()
-
 
 const formEdit = new PopupWithForm({
   selectorPopup: popupEditSelector,
@@ -79,25 +81,22 @@ const formAdd = new PopupWithForm({
 
 formAdd.setEventListeners();
 
-
 //ОТКРЫВАЕТ РЕДАКТИРОВАНИЕ ИМЕНИ
 const openEditPopup = () => {
   edit.open()
-  document.querySelector(nameInputSelector).value = editUser.getUserInfo().name;
-  document.querySelector(jobInputSelector).value = editUser.getUserInfo().job;
-  formEditValidator.enableValidation();
+  nameInput.value = editUser.getUserInfo().name;
+  jobInput.value = editUser.getUserInfo().job;
+
   formEditValidator.hideInputError(popupEdit,nameEditInput);
   formEditValidator.hideInputError(popupEdit,jobEditInput);
 };
-
+formEditValidator.enableValidation();
 
 //ОТКРЫТИЕ ДОБАВЛЕНИЯ КАРТОЧКИ
 const openAddPopup = () => {
   add.open()
-  //formAddElement.reset();
-  formAddValidator.enableValidation();
 };
-
+formAddValidator.enableValidation();
 //ЗАКРТЫИЕ ДОБАВЛЕНИЯ КАРТОЧКИ
 const closeAddPopup = () => {
   add.close()
@@ -105,12 +104,8 @@ const closeAddPopup = () => {
   formAddValidator.hideInputError(popupAdd,photoAddInput);
 };
 
-
 edit.setEventListeners()
 add.setEventListeners()
-
-
-
 
 popupOpenEditButton.addEventListener ('click', openEditPopup);
 popupOpenAddButton.addEventListener('click', openAddPopup);

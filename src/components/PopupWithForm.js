@@ -16,7 +16,6 @@ export default class PopupWithForm extends Popup {
         return this._formValues;
     }
 
-
     setEventListeners() {
         super.setEventListeners()
         this._form = this._element.querySelector('.popup__form')
@@ -26,6 +25,7 @@ export default class PopupWithForm extends Popup {
             this._handleFormSaubmit(data)
         })
     }
+
     close() {
         super.close()
         this._form.reset();

@@ -9,15 +9,14 @@ export default class FormValidator {
     inputElement.classList.add(this._config.inputErrorClass);
     errorElement.textContent = errorMessage;
     errorElement.classList.add(this._config.errorClass);
-  } 
-
+  }
   //СКРЫВАЕМ ЭЛЕМЕНТ ОШИБКИ
   hideInputError = (formElement, inputElement) => {
-  //Находим элемент ошибки
-  const errorElement = formElement.querySelector(`#${inputElement.id}-error`);
-  inputElement.classList.remove(this._config.inputErrorClass);
-  errorElement.classList.remove(this._config.errorClass);
-  errorElement.textContent = '';
+    //Находим элемент ошибки
+    const errorElement = formElement.querySelector(`#${inputElement.id}-error`);
+    inputElement.classList.remove(this._config.inputErrorClass);
+    errorElement.classList.remove(this._config.errorClass);
+    errorElement.textContent = '';
   }
 
   _checkInputValidity = (formElement, inputElement) => {
@@ -47,7 +46,6 @@ export default class FormValidator {
     }
   };
 
-
   _setEventListeners = () => {
     //Находим все поля внутри формы и делаем из них массив
     const inputList = Array.from(this._formElement.querySelectorAll(this._config.inputSelector));
@@ -70,7 +68,6 @@ export default class FormValidator {
 
    _hasInvalidInput = (inputList) => {
     return inputList.some((inputElement) => {
-
       return !inputElement.validity.valid;
     })
   };

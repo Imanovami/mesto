@@ -42,7 +42,5 @@ const initialCards = [
     }
 ];
 
-
-
 export {popupPhotoTitle, popupBigPhoto, popupPhoto, initialCards,
      config, containerListSelector}

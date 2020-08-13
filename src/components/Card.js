@@ -34,9 +34,10 @@ export default class Card {
         this._element.querySelector('.element__trash').addEventListener('click', () =>  {
             this._handleTrashIcon();
         });
+        const elementPhoto = this._element.querySelector('.element__photo');
 
-        this._element.querySelector('.element__photo').addEventListener('click', (evt) =>  {
-           this._handleCardClick(evt);
+        elementPhoto.addEventListener('click', () =>  {
+           this._handleCardClick(elementPhoto);
         });
     }
 
@@ -45,7 +46,8 @@ export default class Card {
     };
 
     _handleTrashIcon () {
-        this._element.closest('li').remove()
+        this._element.closest('li').remove();
+        this._element = null;
     };
 
 }

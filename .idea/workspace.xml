@@ -19,7 +19,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25aa93ce-85f0-46ef-ba42-725f155c8f58" name="Default Changelist" comment="" />
+    <list default="true" id="25aa93ce-85f0-46ef-ba42-725f155c8f58" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormValidator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PopupWithForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWithForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PopupWithImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWithImage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +61,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\canti\Desktop\dev\mesto\src\utils" />
       <recent name="C:\Users\canti\Desktop\dev\mesto\src" />
       <recent name="C:\Users\canti\Desktop\dev\mesto\page" />
     </key>
@@ -64,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1596832422430</updated>
       <workItem from="1596832427286" duration="83520000" />
-      <workItem from="1597149418067" duration="23645000" />
+      <workItem from="1597149418067" duration="33873000" />
     </task>
     <servers />
   </component>
@@ -84,6 +97,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="578" y="240" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597310837007">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="578" y="240" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860/-1920.-182.1920.1040@0.0.1600.860" timestamp="1597310837007" />
     <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1597181240874">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
