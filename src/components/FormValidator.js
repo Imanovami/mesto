@@ -36,15 +36,21 @@ export default class FormValidator {
       this._setEventListeners();  
   }
 
+  buttonDisabled = (button) => {
+    button.classList.add(this._config.inactiveButtonClass)
+    button.setAttribute("disabled", "true");
+  }
+
    _toggleButtonState = (inputList, buttonElement) => {
     if (this._hasInvalidInput(inputList)) {
-      buttonElement.classList.add(this._config.inactiveButtonClass)
-      buttonElement.setAttribute("disabled", "true");
+      this.buttonDisabled(buttonElement)
     } else {
       buttonElement.classList.remove(this._config.inactiveButtonClass);
       buttonElement.removeAttribute("disabled", "false");
     }
   };
+
+
 
   _setEventListeners = () => {
     //Находим все поля внутри формы и делаем из них массив

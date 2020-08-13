@@ -35,6 +35,7 @@ const editUser = new UserInfo(nameInputValue, jobInputValue);
 const nameInput = document.querySelector(nameInputSelector);
 const jobInput =  document.querySelector(jobInputSelector);
 const photo = new PopupWithImage('.popup_type_photo')
+const buttonCreate = popupAdd.querySelector('.popup__save')
 
 const openBigPhoto = (elm) => {
   photo.open(elm);
@@ -86,7 +87,6 @@ const openEditPopup = () => {
   edit.open()
   nameInput.value = editUser.getUserInfo().name;
   jobInput.value = editUser.getUserInfo().job;
-
   formEditValidator.hideInputError(popupEdit,nameEditInput);
   formEditValidator.hideInputError(popupEdit,jobEditInput);
 };
@@ -94,7 +94,8 @@ formEditValidator.enableValidation();
 
 //ОТКРЫТИЕ ДОБАВЛЕНИЯ КАРТОЧКИ
 const openAddPopup = () => {
-  add.open()
+  add.open();
+  formAddValidator.buttonDisabled(buttonCreate);
 };
 formAddValidator.enableValidation();
 //ЗАКРТЫИЕ ДОБАВЛЕНИЯ КАРТОЧКИ
