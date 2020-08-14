@@ -75,10 +75,13 @@ const formAdd = new PopupWithForm({
     };
     const card = new Card({data: addCardNew, handleCardClick: openBigPhoto},'#element-template');
     const cardElement = card.generateCard();
-    document.querySelector('.elements__container').prepend(cardElement);
+    section.addItem(cardElement);
     formAdd.close();
   }
 })
+
+
+
 
 formAdd.setEventListeners();
 
