@@ -58,7 +58,6 @@ export default class FormValidator {
 
     //Находим в текущей форме кнопку отправки
     const buttonElement = this._formElement.querySelector(this._config.submitButtonSelector);
-
     this._toggleButtonState(inputList, buttonElement);
     //Обходим все поля полученной коллекции
     inputList.forEach((inputElement) => {

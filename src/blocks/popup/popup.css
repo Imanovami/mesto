@@ -4,6 +4,7 @@
 @import url(__close/popup__close.css);
 @import url(__close-icon/popup__close-icon.css);
 @import url(__form/popup__form.css);
+@import url(__form/popup__form_avatar.css);
 @import url(_opened/popup_opened.css);
 @import url(__title/popup__title.css);
 @import url(__field/popup__field.css);
@@ -23,6 +24,10 @@
 @import url(__image-big/popup__image-big.css);
 @import url(__description/popup__description.css);
 @import url(__click/popup__click.css);
+@import url(_type_avatar/popup_type_avatar.css);
+@import url(__form/popup__form__submit.css);
+@import url(__title/popup__title_submit.css);
+@import url(__save/popup__save_submit.css);
 
 .popup {
   background-color: rgba(0, 0, 0, .5);

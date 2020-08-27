@@ -1,0 +1,9 @@
+.popup__form_avatar {
+    height: 272px;
+}
+
+@media (max-width: 700px) {
+    .popup__form_avatar{
+        height: 200px;
+    }
+}

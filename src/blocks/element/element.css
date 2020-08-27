@@ -3,6 +3,8 @@
 @import url(__like/element__like.css);
 @import url(__like_active/element__like_active.css);
 @import url(__trash/element__trash.css);
+@import url(__number/element__number.css);
+@import url(__trash/element__trash_render.css);
 
 
 .element {

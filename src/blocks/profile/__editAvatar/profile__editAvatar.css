@@ -1,0 +1,14 @@
+.profile__editAvatar {
+    width: 26px;
+    grid-column: 1/2;
+    align-self: center;
+    margin: 47px;
+    grid-row: 1;
+    z-index: -1;
+}
+
+.profile__editAvatar:hover {
+    z-index: 100;
+}
+
+

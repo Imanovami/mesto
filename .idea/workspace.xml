@@ -20,9 +20,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25aa93ce-85f0-46ef-ba42-725f155c8f58" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/blocks/element/__number/element__number.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blocks/element/__trash/element__trash_render.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blocks/popup/__form/popup__form__submit.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blocks/popup/__form/popup__form_avatar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blocks/popup/__save/popup__save_submit.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blocks/popup/__title/popup__title_submit.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blocks/popup/_type_avatar/popup_type_avatar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blocks/profile/__editAvatar/profile__editAvatar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PopupWithSubmit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/loader.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Section.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Section.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/element/__like/element__like.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/element/__like/element__like.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/element/__title/element__titile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/element/__title/element__titile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/element/__trash/element__trash.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/element/__trash/element__trash.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/element/element.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/element/element.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/popup/__title/popup__title.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/popup/__title/popup__title.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/popup/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/popup/popup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/profile/__avatar/profile__avatar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/profile/__avatar/profile__avatar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/profile/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/profile/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormValidator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PopupWithForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWithForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +58,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -49,7 +76,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../mesto12.08" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../test" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -71,7 +99,11 @@
       <updated>1596832422430</updated>
       <workItem from="1596832427286" duration="83520000" />
       <workItem from="1597149418067" duration="33873000" />
-      <workItem from="1597319509865" duration="8717000" />
+      <workItem from="1597319509865" duration="91248000" />
+      <workItem from="1597831631268" duration="6714000" />
+      <workItem from="1598192007894" duration="10090000" />
+      <workItem from="1598259131166" duration="20593000" />
+      <workItem from="1598347021253" duration="76178000" />
     </task>
     <servers />
   </component>
@@ -95,19 +127,35 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="578" y="240" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860/-1920.-182.1920.1040@0.0.1600.860" timestamp="1597310837007" />
-    <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1597181240874">
+    <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1597831642709">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860/-1920.-182.1920.1040@0.0.1600.860" timestamp="1597181240874" />
+    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860/-1920.-182.1920.1040@0.0.1600.860" timestamp="1597831642709" />
     <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1597148882039" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1597228970030">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1600.860/-1920.-182.1920.1040@0.0.1600.860" timestamp="1597228970030" />
-    <state x="456" y="195" key="run.anything.popup" timestamp="1597067147104">
+    <state x="405" y="40" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1598391498777">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="456" y="195" key="run.anything.popup/0.0.1600.860/-1920.-182.1920.1040@0.0.1600.860" timestamp="1596916925603" />
+    <state x="405" y="40" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1600.860/-1920.-182.1920.1040@0.0.1600.860" timestamp="1598391498777" />
+    <state x="609" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597992699649">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="609" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860/-1920.-182.1920.1040@0.0.1600.860" timestamp="1597992699649" />
+    <state x="197" y="202" width="585" height="592" key="find.popup" timestamp="1598359459408">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="197" y="202" width="585" height="592" key="find.popup/0.0.1600.860/-1920.-182.1920.1040@0.0.1600.860" timestamp="1598359459408" />
+    <state x="456" y="195" key="run.anything.popup" timestamp="1598537368257">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="456" y="195" key="run.anything.popup/0.0.1600.860/-1920.-182.1920.1040@0.0.1600.860" timestamp="1598537368257" />
     <state x="456" y="195" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1597067147104" />
+    <state x="679" y="-15" width="672" height="678" key="search.everywhere.popup" timestamp="1598526225977">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="679" y="-15" width="672" height="678" key="search.everywhere.popup/0.0.1600.860/-1920.-182.1920.1040@0.0.1600.860" timestamp="1598526225977" />
   </component>
 </project>

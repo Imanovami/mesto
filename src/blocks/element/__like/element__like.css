@@ -9,7 +9,7 @@
     grid-column: 2/3;
     width: 20.76px;
     height: 18.13px;
-    align-self: center;
+    align-self: end;
 }
 
   .element__like:hover {

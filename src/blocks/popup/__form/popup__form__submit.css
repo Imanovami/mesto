@@ -1,0 +1,9 @@
+.popup__form_submit {
+    height: 181px;
+}
+
+@media (max-width: 700px) {
+    .popup__form_submit{
+        height: 130px;
+    }
+}
