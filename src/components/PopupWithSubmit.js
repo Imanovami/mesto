@@ -24,12 +24,6 @@ export default class PopupWithSubmit extends Popup {
         this._handleFormSubmit = handler;
      }
 
-    deleteCardPop (elm) {
-        console.log(elm)
-        elm.closest('li').remove();
-        elm = null;
-    }
-
     close() {
         super.close()
     }

@@ -30,7 +30,7 @@ export default class Api {
     }
 
     changeProfile(name, job) {
-        fetch(`${this._baseUrl}/users/me`, {
+        return fetch(`${this._baseUrl}/users/me`, {
             method: 'PATCH',
             headers: this._headers
             ,
@@ -43,8 +43,6 @@ export default class Api {
                 return res.json();
             }
             return Promise.reject(`Ошибка: ${res.status}`);
-
-
         })
     }
 
@@ -64,9 +62,6 @@ export default class Api {
             return Promise.reject(`Ошибка: ${res.status}`);
         })
     }
-    // getAllNeedData () {
-    //     return Promise.all([this.getInitialCards(), this.postCard()])
-    // }
 
     deleteCard(id) {
         return fetch(`${this._baseUrl}/cards/${id}`, {
@@ -119,6 +114,9 @@ export default class Api {
             }
             return Promise.reject(`Ошибка: ${res.status}`);
         })
+    }
 
+    getAllData () {
+        return Promise.all([this. getUserData(), this.getInitialCards()])
     }
 }

@@ -32,7 +32,7 @@ export default class Card {
         this.changeLikes();
         if(this._currentId === this._ownerId ) {
             this._element.querySelector('.element__trash').classList.add('element__trash_render')
-        };
+        }
         return this._element;
     }
 
