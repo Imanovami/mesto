@@ -22,7 +22,6 @@ const popupEdit = document.querySelector('.popup_type_edit');
 const popupOpenEditButton = document.querySelector('.profile__open');
 const popupOpenAddButton = document.querySelector('.profile__open_add');
 const popupAdd = document.querySelector('.popup_type_add');
-const popupCloseAddButton = popupAdd.querySelector('.popup__close');
 const nameInputSelector = '.popup__input_type_name';
 const jobInputSelector = '.popup__input_type_job';
 const nameEditInput = document.querySelector('.popup__input_type_name');
@@ -60,14 +59,10 @@ photo.setEventListeners()
 const openAddPopup = () => {
   add.open();
   formAddValidator.buttonDisabled(buttonCreate);
-};
-
-//ЗАКРТЫИЕ ДОБАВЛЕНИЯ КАРТОЧКИ
-const closeAddPopup = () => {
-  add.close()
   formAddValidator.hideInputError(popupAdd,nameAddInput);
   formAddValidator.hideInputError(popupAdd,photoAddInput);
 };
+
 
 const deleteCard = (elm, id) => {
     trash.open();
@@ -107,6 +102,7 @@ api.getAllData() .then(data => {
             loader(false, popupEditAvatar)
             avatar.close();
         })
+            .catch((err) => console.log(err))
     }
 });
     avatarPlace.addEventListener('click', ()=> {
@@ -197,7 +193,7 @@ api.getAllData() .then(data => {
 
 
 popupOpenAddButton.addEventListener('click', openAddPopup);
-popupCloseAddButton.addEventListener('click',closeAddPopup);
+
 
 
 

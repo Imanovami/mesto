@@ -8,7 +8,7 @@ export default class PopupWithImage extends Popup{
     }
 
     open(elm) {
-        super.open(elm)
+        super.open()
         document.querySelector('.popup__image-big').src = elm.src;
         popupPhotoTitle.textContent = elm.alt;
         popupBigPhoto.alt = elm.alt;
